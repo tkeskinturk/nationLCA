@@ -1,0 +1,602 @@
+//LG6.0//
+version = 6.0
+infile '\...\ISSP2013_Turkey.sav'
+
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  includeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent natident1, natmembr1, natmembr2, natmembr3, natmembr4,
+      natmembr5, natmembr6, natmembr7, natmembr8, nathubrs1, nathubrs2,
+      nathubrs3, nathubrs4, nathubrs5, natpride1, natpride2, natpride3,
+      natpride4, natpride5, natpride6, natpride7, natpride8, natpride9,
+      natpride10;
+   latent
+      Cluster nominal 1;
+equations
+   Cluster <- 1;
+   natident1 <- 1 + Cluster;
+   natmembr1 <- 1 + Cluster;
+   natmembr2 <- 1 + Cluster;
+   natmembr3 <- 1 + Cluster;
+   natmembr4 <- 1 + Cluster;
+   natmembr5 <- 1 + Cluster;
+   natmembr6 <- 1 + Cluster;
+   natmembr7 <- 1 + Cluster;
+   natmembr8 <- 1 + Cluster;
+   nathubrs1 <- 1 + Cluster;
+   nathubrs2 <- 1 + Cluster;
+   nathubrs3 <- 1 + Cluster;
+   nathubrs4 <- 1 + Cluster;
+   nathubrs5 <- 1 + Cluster;
+   natpride1 <- 1 + Cluster;
+   natpride2 <- 1 + Cluster;
+   natpride3 <- 1 + Cluster;
+   natpride4 <- 1 + Cluster;
+   natpride5 <- 1 + Cluster;
+   natpride6 <- 1 + Cluster;
+   natpride7 <- 1 + Cluster;
+   natpride8 <- 1 + Cluster;
+   natpride9 <- 1 + Cluster;
+   natpride10 <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  includeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent natident1, natmembr1, natmembr2, natmembr3, natmembr4,
+      natmembr5, natmembr6, natmembr7, natmembr8, nathubrs1, nathubrs2,
+      nathubrs3, nathubrs4, nathubrs5, natpride1, natpride2, natpride3,
+      natpride4, natpride5, natpride6, natpride7, natpride8, natpride9,
+      natpride10;
+   latent
+      Cluster nominal 2;
+equations
+   Cluster <- 1;
+   natident1 <- 1 + Cluster;
+   natmembr1 <- 1 + Cluster;
+   natmembr2 <- 1 + Cluster;
+   natmembr3 <- 1 + Cluster;
+   natmembr4 <- 1 + Cluster;
+   natmembr5 <- 1 + Cluster;
+   natmembr6 <- 1 + Cluster;
+   natmembr7 <- 1 + Cluster;
+   natmembr8 <- 1 + Cluster;
+   nathubrs1 <- 1 + Cluster;
+   nathubrs2 <- 1 + Cluster;
+   nathubrs3 <- 1 + Cluster;
+   nathubrs4 <- 1 + Cluster;
+   nathubrs5 <- 1 + Cluster;
+   natpride1 <- 1 + Cluster;
+   natpride2 <- 1 + Cluster;
+   natpride3 <- 1 + Cluster;
+   natpride4 <- 1 + Cluster;
+   natpride5 <- 1 + Cluster;
+   natpride6 <- 1 + Cluster;
+   natpride7 <- 1 + Cluster;
+   natpride8 <- 1 + Cluster;
+   natpride9 <- 1 + Cluster;
+   natpride10 <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  includeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent natident1, natmembr1, natmembr2, natmembr3, natmembr4,
+      natmembr5, natmembr6, natmembr7, natmembr8, nathubrs1, nathubrs2,
+      nathubrs3, nathubrs4, nathubrs5, natpride1, natpride2, natpride3,
+      natpride4, natpride5, natpride6, natpride7, natpride8, natpride9,
+      natpride10;
+   latent
+      Cluster nominal 3;
+equations
+   Cluster <- 1;
+   natident1 <- 1 + Cluster;
+   natmembr1 <- 1 + Cluster;
+   natmembr2 <- 1 + Cluster;
+   natmembr3 <- 1 + Cluster;
+   natmembr4 <- 1 + Cluster;
+   natmembr5 <- 1 + Cluster;
+   natmembr6 <- 1 + Cluster;
+   natmembr7 <- 1 + Cluster;
+   natmembr8 <- 1 + Cluster;
+   nathubrs1 <- 1 + Cluster;
+   nathubrs2 <- 1 + Cluster;
+   nathubrs3 <- 1 + Cluster;
+   nathubrs4 <- 1 + Cluster;
+   nathubrs5 <- 1 + Cluster;
+   natpride1 <- 1 + Cluster;
+   natpride2 <- 1 + Cluster;
+   natpride3 <- 1 + Cluster;
+   natpride4 <- 1 + Cluster;
+   natpride5 <- 1 + Cluster;
+   natpride6 <- 1 + Cluster;
+   natpride7 <- 1 + Cluster;
+   natpride8 <- 1 + Cluster;
+   natpride9 <- 1 + Cluster;
+   natpride10 <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  includeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent natident1, natmembr1, natmembr2, natmembr3, natmembr4,
+      natmembr5, natmembr6, natmembr7, natmembr8, nathubrs1, nathubrs2,
+      nathubrs3, nathubrs4, nathubrs5, natpride1, natpride2, natpride3,
+      natpride4, natpride5, natpride6, natpride7, natpride8, natpride9,
+      natpride10;
+   latent
+      Cluster nominal 4;
+equations
+   Cluster <- 1;
+   natident1 <- 1 + Cluster;
+   natmembr1 <- 1 + Cluster;
+   natmembr2 <- 1 + Cluster;
+   natmembr3 <- 1 + Cluster;
+   natmembr4 <- 1 + Cluster;
+   natmembr5 <- 1 + Cluster;
+   natmembr6 <- 1 + Cluster;
+   natmembr7 <- 1 + Cluster;
+   natmembr8 <- 1 + Cluster;
+   nathubrs1 <- 1 + Cluster;
+   nathubrs2 <- 1 + Cluster;
+   nathubrs3 <- 1 + Cluster;
+   nathubrs4 <- 1 + Cluster;
+   nathubrs5 <- 1 + Cluster;
+   natpride1 <- 1 + Cluster;
+   natpride2 <- 1 + Cluster;
+   natpride3 <- 1 + Cluster;
+   natpride4 <- 1 + Cluster;
+   natpride5 <- 1 + Cluster;
+   natpride6 <- 1 + Cluster;
+   natpride7 <- 1 + Cluster;
+   natpride8 <- 1 + Cluster;
+   natpride9 <- 1 + Cluster;
+   natpride10 <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  includeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent natident1, natmembr1, natmembr2, natmembr3, natmembr4,
+      natmembr5, natmembr6, natmembr7, natmembr8, nathubrs1, nathubrs2,
+      nathubrs3, nathubrs4, nathubrs5, natpride1, natpride2, natpride3,
+      natpride4, natpride5, natpride6, natpride7, natpride8, natpride9,
+      natpride10;
+   latent
+      Cluster nominal 5;
+equations
+   Cluster <- 1;
+   natident1 <- 1 + Cluster;
+   natmembr1 <- 1 + Cluster;
+   natmembr2 <- 1 + Cluster;
+   natmembr3 <- 1 + Cluster;
+   natmembr4 <- 1 + Cluster;
+   natmembr5 <- 1 + Cluster;
+   natmembr6 <- 1 + Cluster;
+   natmembr7 <- 1 + Cluster;
+   natmembr8 <- 1 + Cluster;
+   nathubrs1 <- 1 + Cluster;
+   nathubrs2 <- 1 + Cluster;
+   nathubrs3 <- 1 + Cluster;
+   nathubrs4 <- 1 + Cluster;
+   nathubrs5 <- 1 + Cluster;
+   natpride1 <- 1 + Cluster;
+   natpride2 <- 1 + Cluster;
+   natpride3 <- 1 + Cluster;
+   natpride4 <- 1 + Cluster;
+   natpride5 <- 1 + Cluster;
+   natpride6 <- 1 + Cluster;
+   natpride7 <- 1 + Cluster;
+   natpride8 <- 1 + Cluster;
+   natpride9 <- 1 + Cluster;
+   natpride10 <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  includeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent natident1, natmembr1, natmembr2, natmembr3, natmembr4,
+      natmembr5, natmembr6, natmembr7, natmembr8, nathubrs1, nathubrs2,
+      nathubrs3, nathubrs4, nathubrs5, natpride1, natpride2, natpride3,
+      natpride4, natpride5, natpride6, natpride7, natpride8, natpride9,
+      natpride10;
+   latent
+      Cluster nominal 6;
+equations
+   Cluster <- 1;
+   natident1 <- 1 + Cluster;
+   natmembr1 <- 1 + Cluster;
+   natmembr2 <- 1 + Cluster;
+   natmembr3 <- 1 + Cluster;
+   natmembr4 <- 1 + Cluster;
+   natmembr5 <- 1 + Cluster;
+   natmembr6 <- 1 + Cluster;
+   natmembr7 <- 1 + Cluster;
+   natmembr8 <- 1 + Cluster;
+   nathubrs1 <- 1 + Cluster;
+   nathubrs2 <- 1 + Cluster;
+   nathubrs3 <- 1 + Cluster;
+   nathubrs4 <- 1 + Cluster;
+   nathubrs5 <- 1 + Cluster;
+   natpride1 <- 1 + Cluster;
+   natpride2 <- 1 + Cluster;
+   natpride3 <- 1 + Cluster;
+   natpride4 <- 1 + Cluster;
+   natpride5 <- 1 + Cluster;
+   natpride6 <- 1 + Cluster;
+   natpride7 <- 1 + Cluster;
+   natpride8 <- 1 + Cluster;
+   natpride9 <- 1 + Cluster;
+   natpride10 <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  includeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent natident1, natmembr1, natmembr2, natmembr3, natmembr4,
+      natmembr5, natmembr6, natmembr7, natmembr8, nathubrs1, nathubrs2,
+      nathubrs3, nathubrs4, nathubrs5, natpride1, natpride2, natpride3,
+      natpride4, natpride5, natpride6, natpride7, natpride8, natpride9,
+      natpride10;
+   latent
+      Cluster nominal 7;
+equations
+   Cluster <- 1;
+   natident1 <- 1 + Cluster;
+   natmembr1 <- 1 + Cluster;
+   natmembr2 <- 1 + Cluster;
+   natmembr3 <- 1 + Cluster;
+   natmembr4 <- 1 + Cluster;
+   natmembr5 <- 1 + Cluster;
+   natmembr6 <- 1 + Cluster;
+   natmembr7 <- 1 + Cluster;
+   natmembr8 <- 1 + Cluster;
+   nathubrs1 <- 1 + Cluster;
+   nathubrs2 <- 1 + Cluster;
+   nathubrs3 <- 1 + Cluster;
+   nathubrs4 <- 1 + Cluster;
+   nathubrs5 <- 1 + Cluster;
+   natpride1 <- 1 + Cluster;
+   natpride2 <- 1 + Cluster;
+   natpride3 <- 1 + Cluster;
+   natpride4 <- 1 + Cluster;
+   natpride5 <- 1 + Cluster;
+   natpride6 <- 1 + Cluster;
+   natpride7 <- 1 + Cluster;
+   natpride8 <- 1 + Cluster;
+   natpride9 <- 1 + Cluster;
+   natpride10 <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  includeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent natident1, natmembr1, natmembr2, natmembr3, natmembr4,
+      natmembr5, natmembr6, natmembr7, natmembr8, nathubrs1, nathubrs2,
+      nathubrs3, nathubrs4, nathubrs5, natpride1, natpride2, natpride3,
+      natpride4, natpride5, natpride6, natpride7, natpride8, natpride9,
+      natpride10;
+   latent
+      Cluster nominal 8;
+equations
+   Cluster <- 1;
+   natident1 <- 1 + Cluster;
+   natmembr1 <- 1 + Cluster;
+   natmembr2 <- 1 + Cluster;
+   natmembr3 <- 1 + Cluster;
+   natmembr4 <- 1 + Cluster;
+   natmembr5 <- 1 + Cluster;
+   natmembr6 <- 1 + Cluster;
+   natmembr7 <- 1 + Cluster;
+   natmembr8 <- 1 + Cluster;
+   nathubrs1 <- 1 + Cluster;
+   nathubrs2 <- 1 + Cluster;
+   nathubrs3 <- 1 + Cluster;
+   nathubrs4 <- 1 + Cluster;
+   nathubrs5 <- 1 + Cluster;
+   natpride1 <- 1 + Cluster;
+   natpride2 <- 1 + Cluster;
+   natpride3 <- 1 + Cluster;
+   natpride4 <- 1 + Cluster;
+   natpride5 <- 1 + Cluster;
+   natpride6 <- 1 + Cluster;
+   natpride7 <- 1 + Cluster;
+   natpride8 <- 1 + Cluster;
+   natpride9 <- 1 + Cluster;
+   natpride10 <- 1 + Cluster;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  includeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent natident1, natmembr1, natmembr2, natmembr3, natmembr4,
+      natmembr5, natmembr6, natmembr7, natmembr8, nathubrs1, nathubrs2,
+      nathubrs3, nathubrs4, nathubrs5, natpride1, natpride2, natpride3,
+      natpride4, natpride5, natpride6, natpride7, natpride8, natpride9,
+      natpride10;
+   latent
+      Cluster nominal 4;
+equations
+   Cluster <- 1;
+   natident1 <- 1 + Cluster;
+   natmembr1 <- 1 + Cluster;
+   natmembr2 <- 1 + Cluster;
+   natmembr3 <- 1 + Cluster;
+   natmembr4 <- 1 + Cluster;
+   natmembr5 <- 1 + Cluster;
+   natmembr6 <- 1 + Cluster;
+   natmembr7 <- 1 + Cluster;
+   natmembr8 <- 1 + Cluster;
+   nathubrs1 <- 1 + Cluster;
+   nathubrs2 <- 1 + Cluster;
+   nathubrs3 <- 1 + Cluster;
+   nathubrs4 <- 1 + Cluster;
+   nathubrs5 <- 1 + Cluster;
+   natpride1 <- 1 + Cluster;
+   natpride2 <- 1 + Cluster;
+   natpride3 <- 1 + Cluster;
+   natpride4 <- 1 + Cluster;
+   natpride5 <- 1 + Cluster;
+   natpride6 <- 1 + Cluster;
+   natpride7 <- 1 + Cluster;
+   natpride8 <- 1 + Cluster;
+   natpride9 <- 1 + Cluster;
+   natpride10 <- 1 + Cluster;
+   natmembr2 <-> natmembr1 ;
+   natmembr8 <-> natmembr7 ;
+   natpride2 <-> natpride1 ;
+   natpride3 <-> natpride2 ;
+   natpride4 <-> natpride1 ;
+   natpride4 <-> natpride3 ;
+   natpride7 <-> natpride6 ;
+   natpride9 <-> natpride8 ;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  includeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+   outfile  '\...\ISSP2013_Turkey-posteriors.sav'
+      classification=posterior      keep id;
+variables
+   dependent natident1, natmembr1, natmembr2, natmembr3, natmembr4,
+      natmembr5, natmembr6, natmembr7, natmembr8, nathubrs1, nathubrs2,
+      nathubrs3, nathubrs4, nathubrs5, natpride1, natpride2, natpride3,
+      natpride4, natpride5, natpride6, natpride7, natpride8, natpride9,
+      natpride10;
+   latent
+      Cluster nominal 4;
+equations
+   Cluster <- 1;
+   natident1 <- 1 + Cluster;
+   natmembr1 <- 1 + Cluster;
+   natmembr2 <- 1 + Cluster;
+   natmembr3 <- 1 + Cluster;
+   natmembr4 <- 1 + Cluster;
+   natmembr5 <- 1 + Cluster;
+   natmembr6 <- 1 + Cluster;
+   natmembr7 <- 1 + Cluster;
+   natmembr8 <- 1 + Cluster;
+   nathubrs1 <- 1 + Cluster;
+   nathubrs2 <- 1 + Cluster;
+   nathubrs3 <- 1 + Cluster;
+   nathubrs4 <- 1 + Cluster;
+   nathubrs5 <- 1 + Cluster;
+   natpride1 <- 1 + Cluster;
+   natpride2 <- 1 + Cluster;
+   natpride3 <- 1 + Cluster;
+   natpride4 <- 1 + Cluster;
+   natpride5 <- 1 + Cluster;
+   natpride6 <- 1 + Cluster;
+   natpride7 <- 1 + Cluster;
+   natpride8 <- 1 + Cluster;
+   natpride9 <- 1 + Cluster;
+   natpride10 <- 1 + Cluster;
+   natmembr2 <-> natmembr1 ;
+   natmembr8 <-> natmembr7 ;
+   natpride2 <-> natpride1 ;
+   natpride3 <-> natpride2 ;
+   natpride4 <-> natpride1 ;
+   natpride4 <-> natpride3 ;
+   natpride7 <-> natpride6 ;
+   natpride9 <-> natpride8 ;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  includeall;
+   output      
+      parameters=effect  betaopts=wl standarderrors profile probmeans=posterior
+      loadings bivariateresiduals estimatedvalues=model reorderclasses;
+variables
+   dependent natident1, natmembr1, natmembr2, natmembr3, natmembr4,
+      natmembr5, natmembr6, natmembr7, natmembr8, nathubrs1, nathubrs2,
+      nathubrs3, nathubrs4, nathubrs5, natpride1, natpride2, natpride3,
+      natpride4, natpride5, natpride6, natpride7, natpride8, natpride9,
+      natpride10;
+   latent
+      Cluster nominal 4;
+equations
+   Cluster <- 1;
+   natident1 <- 1 + Cluster;
+   natmembr1 <- 1 + Cluster;
+   natmembr2 <- 1 + Cluster;
+   natmembr3 <- 1 + Cluster;
+   natmembr4 <- 1 + Cluster;
+   natmembr5 <- 1 + Cluster;
+   natmembr6 <- 1 + Cluster;
+   natmembr7 <- 1 + Cluster;
+   natmembr8 <- 1 + Cluster;
+   nathubrs1 <- 1 + Cluster;
+   nathubrs2 <- 1 + Cluster;
+   nathubrs3 <- 1 + Cluster;
+   nathubrs4 <- 1 + Cluster;
+   nathubrs5 <- 1 + Cluster;
+   natpride1 <- 1 + Cluster;
+   natpride2 <- 1 + Cluster;
+   natpride3 <- 1 + Cluster;
+   natpride4 <- 1 + Cluster;
+   natpride5 <- 1 + Cluster;
+   natpride6 <- 1 + Cluster;
+   natpride7 <- 1 + Cluster;
+   natpride8 <- 1 + Cluster;
+   natpride9 <- 1 + Cluster;
+   natpride10 <- 1 + Cluster;
+   natmembr2 <-> natmembr1 ;
+   natmembr8 <-> natmembr7 ;
+   natpride2 <-> natpride1 ;
+   natpride3 <-> natpride2 ;
+   natpride4 <-> natpride1 ;
+   natpride4 <-> natpride3 ;
+   natpride7 <-> natpride6 ;
+   natpride9 <-> natpride8 ;
+end model

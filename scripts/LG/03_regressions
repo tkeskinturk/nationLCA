@@ -1,0 +1,68 @@
+//LG6.0//
+version = 6.0
+infile '\...\data_posteriors.sav'
+
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   step3 modal bch;
+   output      
+      parameters=first  betaopts=wl standarderrors=robust profile probmeans=posterior
+      loadings estimatedvalues=model predictionstatistics=conditional reorderclasses;
+variables
+   dependent alloc_anyone continuous, alloc_ethnic continuous, alloc_family continuous,
+      alloc_friend continuous;
+   latent Cluster  nominal posterior = ( clu#3 clu#1 clu#4 clu#2 ) ;
+equations
+   alloc_anyone <- 1 + Cluster;
+   alloc_ethnic <- 1 + Cluster;
+   alloc_family <- 1 + Cluster;
+   alloc_friend <- 1 + Cluster;
+   alloc_anyone;
+   alloc_ethnic;
+   alloc_family;
+   alloc_friend;
+end model
+
+model
+options
+   maxthreads=8;
+   algorithm 
+      tolerance=1e-08 emtolerance=0.01 emiterations=250 nriterations=50 ;
+   startvalues
+      seed=0 sets=16 tolerance=1e-05 iterations=50;
+   bayes
+      categorical=1 variances=1 latent=1 poisson=1;
+   montecarlo
+      seed=0 sets=0 replicates=500 tolerance=1e-08;
+   quadrature  nodes=10;
+   missing  excludeall;
+   step3 modal bch;
+   output      
+      parameters=first  betaopts=wl standarderrors=robust profile probmeans=posterior
+      loadings estimatedvalues=model predictionstatistics=conditional reorderclasses;
+variables
+   dependent alloc_anyone continuous, alloc_ethnic continuous, alloc_family continuous,
+      alloc_friend continuous;
+   latent Cluster  nominal posterior = ( clu#3 clu#1 clu#4 clu#2 ) ;
+equations
+   alloc_anyone <- 1 + Cluster;
+   alloc_ethnic <- 1 + Cluster;
+   alloc_family <- 1 + Cluster;
+   alloc_friend <- 1 + Cluster;
+   alloc_anyone;
+   alloc_ethnic;
+   alloc_family;
+   alloc_friend;
+end model

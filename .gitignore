@@ -1,0 +1,12 @@
+.Rhistory
+.DS_Store
+.Rapp.history
+.RData
+.RDataTmp
+/*.tar.gz
+/*.Rcheck/
+.Rproj.user/
+*_cache/
+*.utf8.md
+*.knit.md
+.Renviron
