@@ -2,7 +2,7 @@
 
 This repository provides the replication files for the paper *Sentiments of Solidarity: Varying Conceptions of Nationhood in Turkey*, forthcoming in *Nations and Nationalism*.
 
-The pre-print version of the paper is stored at [SocArXiv]().
+The pre-print version of the paper is stored at [SocArXiv](https://osf.io/preprints/socarxiv/yma7d).
 
 ## Notes on Replication
 
